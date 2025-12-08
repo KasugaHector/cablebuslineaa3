@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cablebus Linea 1 </title>
+    <title>Cablebus Linea 3 </title>
     <style>
         * {
             margin: 0;
@@ -46,13 +46,13 @@
         
         h2 {
             font-size: 1.5rem;
-            color: #66656b;
+            color: #030011;
             margin-bottom: 5px;
         }
         
         .subtitle {
             font-size: 1.2rem;
-            color: #a8c6ff;
+            color: #fcfcfc;
             max-width: 800px;
             line-height: 1.5;
         }
@@ -90,7 +90,7 @@
             height: 300px;
             border-radius: 15px;
             background-color: rgba(0, 0, 0, 0.3);
-            border: 3px dashed #ffde59;
+            border: 3px dashed #65646A;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -120,7 +120,7 @@
             transform: translate(-50%, -50%);
             width: 70%;
             height: 40%;
-            border: 3px solid #4CAF50;
+            border: 3px solid #3AC1E1;
             border-radius: 10px;
             animation: pulse-frame 2s infinite;
         }
@@ -140,8 +140,8 @@
         }
         
         .camera-button {
-            background: linear-gradient(to right, #ffde59, #ffcc00);
-            color: #1a3a8f;
+            background: linear-gradient(to right, #3AC1E1, #2dcff3);
+            color: #ffffff;
             border: none;
             padding: 12px 30px;
             font-size: 1rem;
@@ -166,7 +166,7 @@
         }
         
         .camera-button:disabled {
-            background: #666;
+            background: #3AC1E1;
             cursor: not-allowed;
             transform: none;
         }
@@ -239,7 +239,7 @@
         }
         
         .map-title {
-            color: #1a3a8f;
+            color: #65646A;
             text-align: center;
             margin-bottom: 20px;
             font-size: 2rem;
@@ -252,7 +252,7 @@
         }
         
         .instructions {
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(59, 58, 58, 0.1);
             border-radius: 15px;
             padding: 25px;
             margin-top: 30px;
@@ -285,8 +285,8 @@
         }
         
         .step-number {
-            background-color: #ffde59;
-            color: #1a3a8f;
+            background-color: #3AC1E1;
+            color: #ffffff;
             width: 30px;
             height: 30px;
             border-radius: 50%;
@@ -299,7 +299,7 @@
         .back-button {
             background-color: rgba(255, 255, 255, 0.1);
             color: white;
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid (255, 255, 255, 0.3);
             padding: 12px 30px;
             font-size: 1rem;
             border-radius: 50px;
@@ -388,8 +388,8 @@
 <body>
     <div class="container">
         <header>
-            <h1>Cablebus Linea 1</h1>
-            <p class="subtitle">Escanea el código QR de tu tarjeta del Metro con la cámara para visualizar el mapa completo del Cablebus Linea 1</p>
+            <h1>Cablebus Linea 3</h1>
+            <p class="subtitle">Escanea el código QR de tu tarjeta del Metro con la cámara para visualizar el mapa completo del Cablebus Linea 3 </p>
         </header>
         
         <section class="scan-section">
@@ -439,22 +439,22 @@
         
         <section class="map-section" id="mapSection">
             <div class="map-container">
-                <h2 class="map-title">Mapa del Cablebus Linea 1 de la Ciudad de México</h2>
-                <img src="assets/Cablebus_linea1.jpg" alt="Mapa del Cablebus Linea 1 CDMX CDMX" class="map-image" id="mapImage">
+                <h2 class="map-title">Mapa del Cablebus Linea 3 de la Ciudad de México</h2>
+                <img src="assets/cablebus_linea3.jpg" alt="Mapa del Cablebus Linea 1 CDMX CDMX" class="map-image" id="mapImage">
             </div>
             
             <div class="instructions">
-                <h3>Información del Cablebus Linea 1 </h3>
-                <p>La Línea 1 del Cablebús conecta la zona alta de la alcaldía Gustavo A. Madero, al norte de la CDMX y cerca de los límites con el municipio de Tlalnepantla, en el Estado de México; desde la estación Indios Verdes hasta Cuautepec. Asimismo, tiene un ramal hacia la estación Tlalpexco. </p>
+                <h3>Información del Cablebus Linea 3 </h3>
+                <p>La Línea 3 facilita el acceso a diversas instituciones culturales, tales como la Cineteca Nacional, actualmente en construcción en la Cuarta Sección del Bosque de Chapultepec; la Bodega Nacional de Arte; la ex Fábrica de Pólvora; el Parque de Cultura Urbana (PARCUR); el Centro de Cultura Ambiental; y Los Pinos. </p>
                 
                 <div class="step">
                     <div class="step-number">1</div>
-                    <div>Estación Terminal:  Indios Verdes (conexión con CETRAM Indios Verdes. )</div>
+                    <div>Estación Terminal: Los Pinos/Constituyentes </div>
                 </div>
                 
                 <div class="step">
                     <div class="step-number">2</div>
-                    <div>Estación Terminal: Cuautepec. (conexión con Red de Transporte de Pasajeros (RTP))</div>
+                    <div>Estación Terminal: Vasco de Quiroga </div>
                 </div>
                 
                 <p>El horario de servicio es de 5:00 A 23:00 HRS, 6:00 A 23:00 HRS, 7:00 A 23:00 HRS entre semana</p>
@@ -739,36 +739,7 @@
                 }
             });
         });
-        
-        // Para una implementación real con detección de QR, necesitarías una librería como:
-        // 1. jsQR: https://github.com/cozmo/jsQR
-        // 2. QuaggaJS: https://github.com/serratus/quaggaJS
-        // 3. ZXing: https://github.com/zxing-js/library
-        
-        // Ejemplo básico de cómo integrar jsQR:
-        /*
-        function startRealQRCodeDetection() {
-            const canvas = document.createElement('canvas');
-            const context = canvas.getContext('2d');
-            
-            qrScanner = setInterval(() => {
-                if (!isCameraActive) return;
-                
-                canvas.width = cameraView.videoWidth;
-                canvas.height = cameraView.videoHeight;
-                context.drawImage(cameraView, 0, 0, canvas.width, canvas.height);
-                
-                const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
-                const code = jsQR(imageData.data, imageData.width, imageData.height);
-                
-                if (code) {
-                    // Procesar código QR detectado
-                    processQRCode(code.data);
-                    clearInterval(qrScanner);
-                }
-            }, 100);
-        }
-        */
     </script>
 </body>
 </html>
+
